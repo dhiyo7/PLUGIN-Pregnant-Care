@@ -62,16 +62,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
 
-//            val name = when (it.id){
-//            ID_HOME -> "HOME"
-//            ID_EXPLORE -> "EXPLORE"
-//            ID_MESSAGE -> "MESSAGE"
-//            ID_NOTIFICATION -> "NOTIFICATION"
-//            ID_ACCOUNT -> "ACCOUNT"
-//            else -> ""
-//            }
-//            tv_selected.text = "$name page is selected"
-        }
+}
 
         bottomNavigation.setOnClickMenuListener {
             val name = when (it.id){
