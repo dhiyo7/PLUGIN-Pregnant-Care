@@ -40,29 +40,149 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="330dp"
+                    android:layout_height="400dp"
                     android:layout_marginTop="85dp"
                     android:paddingTop="15dp"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:paddingBottom="15dp"
+                    android:layout_gravity="center"
                     app:cardCornerRadius="10dp">
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Ibu Diyah"
-                        android:textStyle="bold"
-                        android:textSize="25sp"
-                        android:layout_marginTop="60dp"
-                        android:layout_gravity="center_horizontal"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Diyah"
+                            android:textStyle="bold"
+                            android:textSize="25sp"
+                            android:layout_marginTop="60dp"
+                            android:layout_gravity="center_horizontal"/>
+                        <LinearLayout
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="25dp"
+                            android:paddingBottom="10dp">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/mail"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:layout_gravity="center"
+                                android:text="Diyah@gmail.com"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="25dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/phone"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:layout_gravity="center"
+                                android:text="081265789007"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:paddingTop="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="25dp"
+                            android:paddingBottom="10dp">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/at_sign"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:layout_gravity="center"
+                                android:text="Diyah007"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="25dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/lock"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:layout_gravity="center"
+                                android:text="*********"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="25dp"
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/map_pin"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:layout_gravity="center"
+                                android:text="Jl.Tunon No.007 Tegal"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:paddingTop="10dp"
+                            android:paddingBottom="10dp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingLeft="25dp">
+                            <ImageView
+                                android:layout_width="25dp"
+                                android:layout_height="25dp"
+                                android:background="@drawable/home"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingLeft="20dp"
+                                android:layout_gravity="center"
+                                android:text="Tegal, 07 Juni 1877"/>
+                        </LinearLayout>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </LinearLayout>
         </RelativeLayout>
+        <LinearLayout
+            android:paddingTop="25dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/btn_foto"
+            android:text="SAVE"
+            android:textColor="@color/white"/>
+        </LinearLayout>
     </LinearLayout>
 </RelativeLayout>
