@@ -1,9 +1,105 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".LoginActivity">
+    tools:context=".LoginActivity"
+    android:focusableInTouchMode="true"
+    android:weightSum="2"
+    android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="280sp"
+        android:layout_weight="0">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="260sp"
+            android:background="@drawable/login"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:layout_marginTop="30sp"
+            android:layout_marginLeft="35sp"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/putih"/>
+
+        <ImageView
+            android:layout_width="240sp"
+            android:layout_height="200sp"
+            android:background="@drawable/ic_login"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="50dp"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:gravity="center"
+            android:padding="30dp">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputemail"
+                app:boxStrokeColor="@color/blue"
+                android:hint="@string/email"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:id="@+id/editemail"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/inputpassword"
+                app:boxStrokeColor="@color/blue"
+                android:hint="@string/password"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:layout_width="match_parent"
+                    android:layout_height="45sp"
+                    android:id="@+id/editpassword"
+                    android:inputType="text"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <TextView
+                android:id="@+id/daftar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="20dp"
+                android:text="Belum Punya Akun?"
+                android:textColor="@color/blue"
+                android:textSize="13dp" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="45sp"
+                android:background="@drawable/btn_foto"
+                android:text="Login"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/putih"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
