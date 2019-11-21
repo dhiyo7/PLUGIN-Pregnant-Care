@@ -8,66 +8,70 @@ import com.etebarian.meowbottomnavigation.MeowBottomNavigation
 import com.plugin.pregnantcarekuwuk.FragmentBumil.BerandaFragment
 import com.plugin.pregnantcarekuwuk.FragmentBumil.ChatFragment
 import com.plugin.pregnantcarekuwuk.FragmentBumil.ProfileFragment
+import com.plugin.pregnantcarekuwuk.FragmentUser.HistoryFragment
+import com.plugin.pregnantcarekuwuk.FragmentUser.MapsFragment
+import com.plugin.pregnantcarekuwuk.FragmentUser.ProfilFragment
 import kotlinx.android.synthetic.main.activity_main.*
+import kotlinx.android.synthetic.main.activity_main_user.*
 
-class MainActivity : AppCompatActivity() {
+class MainUserActivity : AppCompatActivity() {
 
-    private var content: FrameLayout? = null
+    private var contentUser: FrameLayout? = null
 
     companion object{
-        private const val ID_HOME =1
-        private const val ID_CHAT =2
+        private const val ID_MAPS =1
+        private const val ID_HISTORY =2
         private const val ID_PROFILE =3
     }
 
     fun addFragment(fragment: Fragment) {
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.content, fragment, fragment.javaClass.getSimpleName())
+            .replace(R.id.contentUser, fragment, fragment.javaClass.getSimpleName())
             .commit()
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_main_user)
 
-        val fragment = BerandaFragment()
+        val fragment = MapsFragment()
         addFragment(fragment)
 
-        bottomNavigation.add(MeowBottomNavigation.Model(ID_HOME, R.drawable.ic_home))
-        bottomNavigation.add(MeowBottomNavigation.Model(ID_CHAT, R.drawable.ic_message))
-        bottomNavigation.add(MeowBottomNavigation.Model(ID_PROFILE, R.drawable.ic_account))
+        bottomNavigationUser.add(MeowBottomNavigation.Model(ID_MAPS, R.drawable.ic_home))
+        bottomNavigationUser.add(MeowBottomNavigation.Model(ID_HISTORY, R.drawable.ic_message))
+        bottomNavigationUser.add(MeowBottomNavigation.Model(ID_PROFILE, R.drawable.ic_account))
 
-        bottomNavigation.setCount(ID_CHAT, "3")
+        bottomNavigationUser.setCount(ID_HISTORY, "3")
 
-        bottomNavigation.setOnShowListener {
+        bottomNavigationUser.setOnShowListener {
                 item -> when (item.id){
-            ID_HOME -> {
-                val fragment = BerandaFragment()
+            ID_MAPS -> {
+                val fragment = MapsFragment()
                 addFragment(fragment)
                 return@setOnShowListener
                 true
             }
-            ID_CHAT -> {
-                val fragment = ChatFragment()
+            ID_HISTORY -> {
+                val fragment = HistoryFragment()
                 addFragment(fragment)
                 return@setOnShowListener
                 true
             }
             ID_PROFILE -> {
-                val fragment = ProfileFragment()
+                val fragment = ProfilFragment()
                 addFragment(fragment)
                 return@setOnShowListener
                 true
             }
         }
 
-}
+        }
 
-        bottomNavigation.setOnClickMenuListener {
+        bottomNavigationUser.setOnClickMenuListener {
             val name = when (it.id){
-                ID_HOME -> "Beranda"
-                ID_CHAT -> "Pesan"
+                ID_MAPS -> "Beranda"
+                ID_HISTORY -> "Pesan"
                 ID_PROFILE -> "Akun"
                 else -> ""
             }

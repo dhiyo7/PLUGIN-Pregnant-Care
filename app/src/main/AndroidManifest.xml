@@ -9,15 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".DetailActivity"></activity>
-        <activity android:name=".Splash" />
-        <activity android:name=".OlahragaActivity" />
-        <activity android:name=".MinumActivity" />
-        <activity android:name=".MakanActivity" />
-        <activity android:name=".RegisterActivity" />
-        <activity android:name=".LoginActivity" />
+        <activity android:name=".MainUserActivity"></activity>
+        <activity android:name=".Activity.DetailActivity" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Activity.OlahragaActivity" />
+        <activity android:name=".Activity.MinumActivity" />
+        <activity android:name=".Activity.MakanActivity" />
+        <activity android:name=".Activity.RegisterActivity" />
+        <activity android:name=".Activity.LoginActivity" />
         <activity
-            android:name=".MainActivity"
+            android:name=".Splash"
             android:configChanges="keyboardHidden|orientation|screenSize">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

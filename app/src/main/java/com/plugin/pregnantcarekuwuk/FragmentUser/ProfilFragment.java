@@ -1,4 +1,4 @@
-package com.plugin.pregnantcarekuwuk.FragmentBumil;
+package com.plugin.pregnantcarekuwuk.FragmentUser;
 
 
 import android.os.Bundle;
@@ -14,10 +14,10 @@ import com.plugin.pregnantcarekuwuk.R;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class ChatFragment extends Fragment {
+public class ProfilFragment extends Fragment {
 
 
-    public ChatFragment() {
+    public ProfilFragment() {
         // Required empty public constructor
     }
 
@@ -26,7 +26,7 @@ public class ChatFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_chat, container, false);
+        return inflater.inflate(R.layout.fragment_profil, container, false);
     }
 
 }
