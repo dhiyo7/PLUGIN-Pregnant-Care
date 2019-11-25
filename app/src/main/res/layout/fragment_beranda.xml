@@ -38,6 +38,7 @@
             android:layout_marginTop="200dp">
 
             <androidx.cardview.widget.CardView
+                android:id="@+id/mnMakan"
                 android:elevation="4dp"
                 android:layout_margin="5dp"
                 android:layout_width="100dp"
@@ -60,38 +61,43 @@
                         android:layout_marginTop="1dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Makanan"
+                        android:text="Makan"
                         android:textColor="@color/blue"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
-                android:elevation="4dp"
-                android:layout_margin="5dp"
+                android:id="@+id/mnMinum"
                 android:layout_width="100dp"
-                android:layout_height="100dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
                 android:layout_weight="1"
+                android:elevation="4dp"
                 app:cardCornerRadius="10dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
+                    android:gravity="center"
+                    android:orientation="vertical">
+
                     <ImageView
                         android:layout_width="60dp"
                         android:layout_height="60dp"
-                        android:background="@drawable/ic_minum"
                         android:layout_gravity="center"
-                        android:layout_marginTop="15dp"/>
+                        android:layout_marginTop="15dp"
+                        android:background="@drawable/ic_minum" />
+
                     <TextView
-                        android:layout_marginTop="1dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Makanan"
-                        android:textColor="@color/blue"/>
+                        android:layout_marginTop="1dp"
+                        android:text="Minum"
+                        android:textColor="@color/blue" />
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
+                android:id="@+id/mnOlahraga"
                 android:elevation="4dp"
                 android:layout_margin="5dp"
                 android:layout_width="100dp"
@@ -114,7 +120,7 @@
                         android:layout_marginTop="1dp"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Makanan"
+                        android:text="Olahraga"
                         android:textColor="@color/blue"/>
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
