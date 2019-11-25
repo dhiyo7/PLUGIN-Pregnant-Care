@@ -1,9 +1,32 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.DetailActivity">
+    tools:context=".Activity.DetailActivity"
+    android:orientation="vertical"
+    android:gravity="center">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jus Jeruk"
+        android:textStyle="bold"
+        android:layout_marginRight="80sp"
+        android:textSize="30sp"/>
+
+    <ImageView
+        android:layout_width="240sp"
+        android:layout_height="200sp"
+        android:layout_marginTop="30sp"
+        android:background="@drawable/jeruk"/>
+    <TextView
+        android:layout_width="300sp"
+        android:layout_height="wrap_content"
+        android:justificationMode="inter_word"
+        android:text="Sistem kekebalan \n Jeruk telah lama dikenal sebagai pembangkit tenaga yang memiliki khasiat penyembuhan, dan salah satu sumber vitamin C terkaya yang dapat Anda tambahkan ke dalam asupan tubuh Anda. Satu buah jeruk memiliki lebih dari 200 persen kebutuhan vitamin C tubuh. Vitamin C juga dikenal sebagai asam askorbat, berfungsi sebagai antioksidan utama dalam tubuh, dan menghancurkan atau menetralisir radikal bebas sebelum mereka dapat merusak sistem tubuh. Tubuh juga membutuhkan vitamin C untuk merangsang aspek lain dari sistem kekebalan tubuh. Selanjutnya, asam askorbat adalah salah satu komponen dasar kolagen, yang diperlukan untuk memperbaiki sel dan untuk pertumbuhan jaringan baru di dalam tubuh."
+        android:layout_marginTop="20sp"/>
+
+</LinearLayout>

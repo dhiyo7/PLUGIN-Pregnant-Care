@@ -12,7 +12,7 @@
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="280sp"
+        android:layout_height="wrap_content"
         android:layout_weight="0">
 
         <ImageView
@@ -60,7 +60,7 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="45sp"
+                    android:layout_height="wrap_content"
                     android:id="@+id/editemail"
                     android:inputType="text"/>
             </com.google.android.material.textfield.TextInputLayout>
@@ -75,14 +75,15 @@
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:layout_width="match_parent"
-                    android:layout_height="45sp"
+                    android:layout_height="wrap_content"
                     android:id="@+id/editpassword"
                     android:inputType="text"/>
             </com.google.android.material.textfield.TextInputLayout>
 
 
             <TextView
-                android:id="@+id/daftar"
+                android:focusableInTouchMode="true"
+                android:id="@+id/belumPunya"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="90dp"

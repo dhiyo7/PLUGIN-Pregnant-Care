@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -10,6 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="250dp"
         android:background="@drawable/profile"/>
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -17,28 +19,33 @@
         android:textSize="25sp"
         android:textStyle="bold"
         android:textColor="@color/white"
-        android:paddingLeft="40dp"
-        android:paddingTop="50dp"/>
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="40dp"/>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginLeft="20dp"
         android:layout_marginRight="20dp">
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="130dp">
+
             <ImageView
                 android:layout_width="130dp"
                 android:layout_height="130dp"
                 android:layout_centerHorizontal="true"
                 android:src="@drawable/ic_mother"
                 android:elevation="1dp"/>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
+
                 <androidx.cardview.widget.CardView
                     android:layout_width="330dp"
                     android:layout_height="400dp"
@@ -49,18 +56,21 @@
                     android:paddingBottom="15dp"
                     android:layout_gravity="center"
                     app:cardCornerRadius="10dp">
+
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Diyah"
+                            android:text="Ibu Diyah"
                             android:textStyle="bold"
                             android:textSize="25sp"
                             android:layout_marginTop="60dp"
                             android:layout_gravity="center_horizontal"/>
+
                         <LinearLayout
                             android:paddingTop="10dp"
                             android:layout_width="match_parent"
@@ -185,4 +195,5 @@
             android:textColor="@color/white"/>
         </LinearLayout>
     </LinearLayout>
+
 </RelativeLayout>
