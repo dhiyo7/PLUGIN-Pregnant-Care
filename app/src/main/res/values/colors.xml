@@ -9,4 +9,18 @@
     <color name="blue">#1675BC</color>
     <color name="transparent">#00000000</color>
     <color name="putih">#FFFFFF</color>
+
+
+    //gradient usia kandungan
+    <color name="bulan1">#ADFF2F</color>
+    <color name="bulan2">#7FFF2F</color>
+    <color name="bulan3">#59FF2F</color>
+    <color name="bulan4">#EAFB2B</color>
+    <color name="bulan5">#FFFF2F</color>
+    <color name="bulan6">#FFD22F</color>
+    <color name="bulan7">#FFA52F</color>
+    <color name="bulan8">#FF712F</color>
+    <color name="bulan9">#FF2F2F</color>
+
+
 </resources>

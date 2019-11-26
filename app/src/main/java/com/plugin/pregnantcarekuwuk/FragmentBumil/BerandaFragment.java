@@ -15,7 +15,9 @@ import android.view.ViewGroup;
 import android.widget.LinearLayout;
 import android.widget.Toast;
 
+import com.plugin.pregnantcarekuwuk.Activity.MakanActivity;
 import com.plugin.pregnantcarekuwuk.Activity.MinumActivity;
+import com.plugin.pregnantcarekuwuk.Activity.OlahragaActivity;
 import com.plugin.pregnantcarekuwuk.R;
 
 /**
@@ -41,7 +43,9 @@ public class BerandaFragment extends Fragment {
         mnMakan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(getActivity(), "Kuwuk", Toast.LENGTH_SHORT).show();
+                Intent m = new Intent(getActivity(), MakanActivity.class);
+                startActivity(m);
+
             }
         });
 
@@ -49,13 +53,19 @@ public class BerandaFragment extends Fragment {
         mnMinum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /* Contoh intent go Fragment */
-                Intent kuwuk = new Intent(getActivity(), MinumActivity.class);
-                startActivity(kuwuk);
+                Intent mnm = new Intent(getActivity(), MinumActivity.class);
+                startActivity(mnm);
             }
         });
 
         mnOlahraga = view.findViewById(R.id.mnOlahraga);
+        mnOlahraga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent or = new Intent(getActivity(), OlahragaActivity.class);
+                startActivity(or);
+            }
+        });
 
 
         return view;
