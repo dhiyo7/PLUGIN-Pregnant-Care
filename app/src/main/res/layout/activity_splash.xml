@@ -15,18 +15,27 @@
         android:layout_height="180sp"
         android:background="@drawable/logo" />
 
-    <TextView
+    <LinearLayout
+        android:id="@+id/linear"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10sp"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:text="Pregnant"/>
+        android:gravity="center"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10sp"
+            android:textStyle="bold"
+            android:textSize="25dp"
+            android:text="Pregnant"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:textStyle="bold"
-        android:textSize="25sp"
-        android:text="Care"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:text="Care"/>
+    </LinearLayout>
+
+
 </LinearLayout>

@@ -7,7 +7,10 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.view.Window;
 import android.view.WindowManager;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
+import android.widget.LinearLayout;
 
 import com.plugin.pregnantcarekuwuk.Activity.LoginActivity;
 import com.plugin.pregnantcarekuwuk.Activity.RegisterActivity;
@@ -15,13 +18,22 @@ import com.plugin.pregnantcarekuwuk.Activity.RegisterActivity;
 
 public class Splash extends AppCompatActivity {
 
-    ImageView logo;
+    private ImageView logo;
+    private LinearLayout linear;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         this.requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.activity_splash);
+
+        logo = (ImageView) findViewById(R.id.logo);
+        linear = (LinearLayout) findViewById(R.id.linear);
+
+        Animation myanim = AnimationUtils.loadAnimation(this,R.anim.transition);
+        logo.startAnimation(myanim);
+        linear.startAnimation(myanim);
+
 
         getWindow().setFlags(
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
