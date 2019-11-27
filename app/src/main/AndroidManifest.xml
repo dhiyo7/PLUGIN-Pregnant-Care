@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.plugin.pregnantcarekuwuk">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
 
     <application
         android:allowBackup="true"
@@ -12,7 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainUserActivity"></activity>
+        <activity
+            android:name=".MenuOlahragaActivity"
+            android:label="@string/title_activity_menu_olahraga"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity
+            android:name=".MenuMinumActivity"
+            android:label="@string/title_activity_menu_minum"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".MenuMakanActivity"
+            android:label="@string/title_activity_menu_makan"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MainUserActivity" />
         <activity android:name=".Activity.DetailActivity" />
         <activity android:name=".MainActivity" />
         <activity android:name=".Activity.OlahragaActivity" />
