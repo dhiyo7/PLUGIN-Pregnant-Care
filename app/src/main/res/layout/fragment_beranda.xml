@@ -1,5 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    android:layout_centerInParent="true"
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,357 +9,389 @@
     tools:context=".FragmentBumil.BerandaFragment"
     android:orientation="vertical">
 
-    <RelativeLayout
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
 
-        <ImageView
-            android:layout_width="match_parent"
-            android:layout_height="230dp"
-            android:background="@drawable/login"
-            android:scaleType="fitXY" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="35dp"
-            android:layout_marginTop="80dp"
-            android:text="Hai, Diyah"
-            android:textColor="@color/putih"
-            android:textSize="30dp"
-            android:textStyle="bold" />
-
-        <LinearLayout
-            android:gravity="center"
+        <RelativeLayout
+            android:id="@+id/rlMain"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:weightSum="3"
-            android:padding="20dp"
-            android:layout_marginTop="200dp">
+            android:orientation="vertical">
 
-            <androidx.cardview.widget.CardView
-                android:id="@+id/mnMakan"
-                android:layout_width="100dp"
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="230dp"
+                android:background="@drawable/login"
+                android:scaleType="fitXY" />
+
+            <TextView
+                android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:elevation="4dp"
-                app:cardCornerRadius="10dp">
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="80dp"
+                android:text="Hai, Diyah"
+                android:textColor="@color/putih"
+                android:textSize="30dp"
+                android:textStyle="bold" />
 
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="15dp"
-                        android:background="@drawable/ic_makan" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="1dp"
-                        android:text="Makan"
-                        android:textColor="@color/blue" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/mnMinum"
-                android:layout_width="100dp"
-                android:layout_height="wrap_content"
-                android:layout_margin="5dp"
-                android:layout_weight="1"
-                android:elevation="4dp"
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:gravity="center"
-                    android:orientation="vertical">
-
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="15dp"
-                        android:background="@drawable/ic_minum" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="1dp"
-                        android:text="Minum"
-                        android:textColor="@color/blue" />
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
-                android:id="@+id/mnOlahraga"
-                android:elevation="4dp"
-                android:layout_margin="5dp"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_weight="1"
-                app:cardCornerRadius="10dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    android:gravity="center">
-                    <ImageView
-                        android:layout_width="60dp"
-                        android:layout_height="60dp"
-                        android:background="@drawable/ic_olahraga"
-                        android:layout_gravity="center"
-                        android:layout_marginTop="15dp"/>
-                    <TextView
-                        android:layout_marginTop="1dp"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Olahraga"
-                        android:textColor="@color/blue"/>
-                </LinearLayout>
-            </androidx.cardview.widget.CardView>
-
-        </LinearLayout>
-
-    </RelativeLayout>
-
-    <androidx.cardview.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="91dp"
-        android:layout_marginRight="10dp"
-        android:layout_marginLeft="10dp">
-
-    </androidx.cardview.widget.CardView>
-
-    <HorizontalScrollView
-        android:scrollbars="none"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal"
-            android:gravity="center_horizontal">
-
-           <androidx.cardview.widget.CardView
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:elevation="4dp"
-               app:cardCornerRadius="16dp"
-               style="@style/Tombol_Sub"
-               android:layout_margin="5dp">
-
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   android:orientation="vertical">
-                   <LinearLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:weightSum="3"
-                       android:gravity="center"
-                       android:layout_margin="10dp">
-
-                       <LinearLayout
-                           android:layout_width="100dp"
-                           android:layout_height="30dp"
-                           android:background="@drawable/gradient_1"
-                           android:layout_weight="1"/>
-
-                       <LinearLayout
-                           android:layout_width="100dp"
-                           android:layout_height="30dp"
-                           android:background="@drawable/gradient_2"
-                           android:layout_weight="1">
-
-                           <TextView
-                               android:layout_width="match_parent"
-                               android:layout_height="wrap_content"
-                               android:text="Bulan ke 9"
-                               android:textColor="@color/blue"
-                               android:gravity="center"
-                               android:layout_gravity="center"
-                               android:textStyle="bold"
-                               android:textSize="16sp"/>
-                       </LinearLayout>
-                       <LinearLayout
-                           android:layout_width="100dp"
-                           android:layout_height="30dp"
-                           android:background="@drawable/gradient_3"
-                           android:layout_weight="1"/>
-
-                   </LinearLayout>
-
-                   <TextView
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent"
-                       android:text="\u2022 Perhatikan Kondisi tubuh anda, karena sudah \n  memasuki kandungan ke 9"
-                       android:textColor="@color/blue"
-                       android:layout_marginLeft="10dp"/>
-
-                   <TextView
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent"
-                       android:text="\u2022 Hindari aktivitas yang berlebihan"
-                       android:textColor="@color/blue"
-                       android:layout_marginLeft="10dp"/>
-
-               </LinearLayout>
-
-           </androidx.cardview.widget.CardView>
-
-           <androidx.cardview.widget.CardView
-               android:layout_width="match_parent"
-               android:layout_height="wrap_content"
-               android:elevation="4dp"
-               app:cardCornerRadius="16dp"
-               style="@style/Tombol_Sub"
-               android:layout_margin="5dp">
-
-               <LinearLayout
-                   android:layout_width="match_parent"
-                   android:layout_height="match_parent"
-                   android:orientation="vertical">
-                   <LinearLayout
-                       android:layout_width="match_parent"
-                       android:layout_height="wrap_content"
-                       android:weightSum="3"
-                       android:gravity="center"
-                       android:layout_margin="10dp">
-
-                       <LinearLayout
-                           android:layout_width="100dp"
-                           android:layout_height="30dp"
-                           android:background="@drawable/gradient_1"
-                           android:layout_weight="1"/>
-
-                       <LinearLayout
-                           android:layout_width="100dp"
-                           android:layout_height="30dp"
-                           android:background="@drawable/gradient_2"
-                           android:layout_weight="1">
-
-                           <TextView
-                               android:layout_width="match_parent"
-                               android:layout_height="wrap_content"
-                               android:text="Bulan ke 9"
-                               android:textColor="@color/blue"
-                               android:gravity="center"
-                               android:layout_gravity="center"
-                               android:textStyle="bold"
-                               android:textSize="16sp"/>
-                       </LinearLayout>
-                       <LinearLayout
-                           android:layout_width="100dp"
-                           android:layout_height="30dp"
-                           android:background="@drawable/gradient_3"
-                           android:layout_weight="1"/>
-
-                   </LinearLayout>
-
-                   <TextView
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent"
-                       android:text="\u2022 Perhatikan Kondisi tubuh anda, karena sudah \n  memasuki kandungan ke 9"
-                       android:textColor="@color/blue"
-                       android:layout_marginLeft="10dp"/>
-
-                   <TextView
-                       android:layout_width="match_parent"
-                       android:layout_height="match_parent"
-                       android:text="\u2022 Hindari aktivitas yang berlebihan"
-                       android:textColor="@color/blue"
-                       android:layout_marginLeft="10dp"/>
-
-               </LinearLayout>
-
-           </androidx.cardview.widget.CardView>
-
-            <androidx.cardview.widget.CardView
+            <LinearLayout
+                android:gravity="center"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:elevation="4dp"
-                app:cardCornerRadius="16dp"
-                style="@style/Tombol_Sub"
-                android:layout_margin="5dp">
+                android:orientation="horizontal"
+                android:weightSum="3"
+                android:padding="20dp"
+                android:layout_marginTop="200dp">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mnMakan"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/ic_makan" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="Makan"
+                            android:textColor="@color/blue" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mnMinum"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:elevation="4dp"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"
+                            android:background="@drawable/ic_minum" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:text="Minum"
+                            android:textColor="@color/blue" />
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/mnOlahraga"
+                    android:elevation="4dp"
+                    android:layout_margin="5dp"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_weight="1"
+                    app:cardCornerRadius="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:gravity="center">
+                        <ImageView
+                            android:layout_width="60dp"
+                            android:layout_height="60dp"
+                            android:background="@drawable/ic_olahraga"
+                            android:layout_gravity="center"
+                            android:layout_marginTop="15dp"/>
+                        <TextView
+                            android:layout_marginTop="1dp"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Olahraga"
+                            android:textColor="@color/blue"/>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <com.skyfishjy.library.RippleBackground
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:id="@+id/ripple_bg"
+            app:rb_color="@color/blue"
+            app:rb_radius="30dp"
+            app:rb_rippleAmount="4"
+            app:rb_duration="7000"
+            app:rb_scale="6">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/ivPannic"
+                android:layout_gravity="center"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:src="@drawable/logo"
+                android:padding="3dp"
+                app:civ_border_width="2dp"
+                app:civ_border_color="@color/blue"/>
+
+        </com.skyfishjy.library.RippleBackground>
+
+        <RelativeLayout
+            android:layout_marginTop="20dp"
+            android:layout_gravity="bottom"
+            android:gravity="bottom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <HorizontalScrollView
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="vertical">
-                    <LinearLayout
+                    android:orientation="horizontal"
+                    android:gravity="center_horizontal">
+
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:gravity="center"
-                        android:layout_margin="10dp">
+                        android:elevation="4dp"
+                        app:cardCornerRadius="16dp"
+                        style="@style/Tombol_Sub"
+                        android:layout_margin="5dp">
 
                         <LinearLayout
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/gradient_1"
-                            android:layout_weight="1"/>
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3"
+                                android:gravity="center"
+                                android:layout_margin="10dp">
 
-                        <LinearLayout
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/gradient_2"
-                            android:layout_weight="1">
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_1"
+                                    android:layout_weight="1"/>
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_2"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bulan ke 9"
+                                        android:textColor="@color/blue"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="16sp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_3"
+                                    android:layout_weight="1"/>
+
+                            </LinearLayout>
 
                             <TextView
                                 android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Bulan ke 9"
+                                android:layout_height="match_parent"
+                                android:text="\u2022 Perhatikan Kondisi tubuh anda, karena sudah \n  memasuki kandungan ke 9"
                                 android:textColor="@color/blue"
-                                android:gravity="center"
-                                android:layout_gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"/>
+                                android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="\u2022 Hindari aktivitas yang berlebihan"
+                                android:textColor="@color/blue"
+                                android:layout_marginLeft="10dp"/>
+
                         </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="16dp"
+                        style="@style/Tombol_Sub"
+                        android:layout_margin="5dp">
+
                         <LinearLayout
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/gradient_3"
-                            android:layout_weight="1"/>
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3"
+                                android:gravity="center"
+                                android:layout_margin="10dp">
 
-                    </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_1"
+                                    android:layout_weight="1"/>
 
-                    <TextView
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_2"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bulan ke 9"
+                                        android:textColor="@color/blue"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="16sp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_3"
+                                    android:layout_weight="1"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="\u2022 Perhatikan Kondisi tubuh anda, karena sudah \n  memasuki kandungan ke 9"
+                                android:textColor="@color/blue"
+                                android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="\u2022 Hindari aktivitas yang berlebihan"
+                                android:textColor="@color/blue"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="\u2022 Perhatikan Kondisi tubuh anda, karena sudah \n  memasuki kandungan ke 9"
-                        android:textColor="@color/blue"
-                        android:layout_marginLeft="10dp"/>
+                        android:layout_height="wrap_content"
+                        android:elevation="4dp"
+                        app:cardCornerRadius="16dp"
+                        style="@style/Tombol_Sub"
+                        android:layout_margin="5dp">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="\u2022 Hindari aktivitas yang berlebihan"
-                        android:textColor="@color/blue"
-                        android:layout_marginLeft="10dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:weightSum="3"
+                                android:gravity="center"
+                                android:layout_margin="10dp">
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_1"
+                                    android:layout_weight="1"/>
+
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_2"
+                                    android:layout_weight="1">
+
+                                    <TextView
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:text="Bulan ke 9"
+                                        android:textColor="@color/blue"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:textStyle="bold"
+                                        android:textSize="16sp"/>
+                                </LinearLayout>
+                                <LinearLayout
+                                    android:layout_width="100dp"
+                                    android:layout_height="30dp"
+                                    android:background="@drawable/gradient_3"
+                                    android:layout_weight="1"/>
+
+                            </LinearLayout>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="\u2022 Perhatikan Kondisi tubuh anda, karena sudah \n  memasuki kandungan ke 9"
+                                android:textColor="@color/blue"
+                                android:layout_marginLeft="10dp"/>
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="\u2022 Hindari aktivitas yang berlebihan"
+                                android:textColor="@color/blue"
+                                android:layout_marginLeft="10dp"/>
+
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
 
                 </LinearLayout>
+            </HorizontalScrollView>
 
-            </androidx.cardview.widget.CardView>
+        </RelativeLayout>
 
-        </LinearLayout>
-    </HorizontalScrollView>
-
-
+    </LinearLayout>
 
 
-</LinearLayout>
+</RelativeLayout>

@@ -9,6 +9,7 @@ import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
+import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -18,7 +19,11 @@ import android.widget.Toast;
 import com.plugin.pregnantcarekuwuk.Activity.MakanActivity;
 import com.plugin.pregnantcarekuwuk.Activity.MinumActivity;
 import com.plugin.pregnantcarekuwuk.Activity.OlahragaActivity;
+import com.plugin.pregnantcarekuwuk.MainActivity;
 import com.plugin.pregnantcarekuwuk.R;
+import com.skyfishjy.library.RippleBackground;
+
+import de.hdodenhof.circleimageview.CircleImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -26,6 +31,9 @@ import com.plugin.pregnantcarekuwuk.R;
 public class BerandaFragment extends Fragment {
 
     private CardView mnMakan, mnMinum, mnOlahraga;
+    private CircleImageView ivPannic;
+    private RippleBackground rippleBg;
+
 
 
 
@@ -67,6 +75,22 @@ public class BerandaFragment extends Fragment {
             }
         });
 
+        rippleBg = view.findViewById(R.id.ripple_bg);
+        ivPannic = view.findViewById(R.id.ivPannic);
+        ivPannic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rippleBg.startRippleAnimation();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        rippleBg.stopRippleAnimation();
+                        startActivity(new Intent(getActivity(), MainActivity.class));
+                    }
+                }, 3000);
+
+            }
+        });
 
         return view;
     }

@@ -39,6 +39,8 @@ dependencies {
 
 //    UI
     implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
+    implementation 'de.hdodenhof:circleimageview:3.0.0'
+
 
 
     testImplementation 'junit:junit:4.12'
