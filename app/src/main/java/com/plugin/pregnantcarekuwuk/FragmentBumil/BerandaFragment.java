@@ -20,6 +20,7 @@ import com.plugin.pregnantcarekuwuk.Activity.MakanActivity;
 import com.plugin.pregnantcarekuwuk.Activity.MinumActivity;
 import com.plugin.pregnantcarekuwuk.Activity.OlahragaActivity;
 import com.plugin.pregnantcarekuwuk.MainActivity;
+import com.plugin.pregnantcarekuwuk.MenuMakanActivity;
 import com.plugin.pregnantcarekuwuk.R;
 import com.skyfishjy.library.RippleBackground;
 
@@ -51,7 +52,7 @@ public class BerandaFragment extends Fragment {
         mnMakan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent m = new Intent(getActivity(), MakanActivity.class);
+                Intent m = new Intent(getActivity(), MenuMakanActivity.class);
                 startActivity(m);
 
             }
@@ -75,22 +76,22 @@ public class BerandaFragment extends Fragment {
             }
         });
 
-        rippleBg = view.findViewById(R.id.ripple_bg);
-        ivPannic = view.findViewById(R.id.ivPannic);
-        ivPannic.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                rippleBg.startRippleAnimation();
-                new Handler().postDelayed(new Runnable() {
-                    @Override
-                    public void run() {
-                        rippleBg.stopRippleAnimation();
-                        startActivity(new Intent(getActivity(), MainActivity.class));
-                    }
-                }, 3000);
-
-            }
-        });
+//        rippleBg = view.findViewById(R.id.ripple_bg);
+//        ivPannic = view.findViewById(R.id.ivPannic);
+//        ivPannic.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View v) {
+//                rippleBg.startRippleAnimation();
+//                new Handler().postDelayed(new Runnable() {
+//                    @Override
+//                    public void run() {
+//                        rippleBg.stopRippleAnimation();
+//                        startActivity(new Intent(getActivity(), MainActivity.class));
+//                    }
+//                }, 3000);
+//
+//            }
+//        });
 
         return view;
     }
