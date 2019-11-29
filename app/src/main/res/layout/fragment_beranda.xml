@@ -173,6 +173,15 @@
                     android:gravity="center_horizontal"
                     android:padding="20dp">
 
+                    <TextView
+                        android:id="@+id/lihat_semua"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Lihat Semua >>"
+                        android:textStyle="bold"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="107dp"/>
+
                     <androidx.cardview.widget.CardView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -195,13 +204,13 @@
 
                                 <LinearLayout
                                     android:layout_width="100dp"
-                                    android:layout_height="30dp"
+                                    android:layout_height="25dp"
                                     android:background="@drawable/gradient_1"
                                     android:layout_weight="1"/>
 
                                 <LinearLayout
                                     android:layout_width="100dp"
-                                    android:layout_height="30dp"
+                                    android:layout_height="25dp"
                                     android:background="@drawable/gradient_2"
                                     android:layout_weight="1">
 
@@ -217,7 +226,7 @@
                                 </LinearLayout>
                                 <LinearLayout
                                     android:layout_width="100dp"
-                                    android:layout_height="30dp"
+                                    android:layout_height="25dp"
                                     android:background="@drawable/gradient_3"
                                     android:layout_weight="1"/>
 
@@ -226,7 +235,7 @@
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:text="\u2022 Perhatikan Kondisi tubuh anda, karena sudah \n  memasuki kandungan ke 9"
+                                android:text="\u2022 Perhatikan Kondisi tubuh anda, karena \n  sudah memasuki kandungan ke 9"
                                 android:textColor="@color/blue"
                                 android:layout_marginLeft="10dp"/>
 

@@ -82,7 +82,7 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/ic_location"
+                                android:src="@drawable/ic_email"
                                 android:layout_gravity="center_vertical"
                                 android:layout_marginTop="5dp"/>
 
@@ -212,14 +212,14 @@
                             <ImageView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:src="@drawable/ic_alamat"
+                                android:src="@drawable/ic_date"
                                 android:layout_gravity="center_vertical"
                                 android:layout_marginTop="5dp"/>
 
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text=".@diyah007"
+                                android:text="Tegal, 20 Juni 1999"
                                 android:textSize="16sp"
                                 android:layout_marginLeft="20dp"
                                 android:layout_gravity="center"/>

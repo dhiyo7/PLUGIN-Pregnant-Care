@@ -6,13 +6,16 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 
+import com.plugin.pregnantcarekuwuk.MainActivity;
 import com.plugin.pregnantcarekuwuk.R;
 
 public class LoginActivity extends AppCompatActivity {
 
     TextView register;
+    Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private void initView(){
         register = findViewById(R.id.belumPunya);
+        login = findViewById(R.id.login);
     }
 
     private void intent(){
@@ -38,6 +42,14 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent a = new Intent(LoginActivity.this, RegisterActivity.class);
                 startActivity(a);
+            }
+        });
+
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent b = new Intent(LoginActivity.this, MainActivity.class);
+                startActivity(b);
             }
         });
     }
