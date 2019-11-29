@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="200dp"
         android:scaleType="fitXY"
-        android:background="@drawable/bg_makanan"/>
+        android:background="@drawable/bg_makan"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -35,7 +35,7 @@
                         android:scaleType="centerCrop"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/ic_makan" />
+                        android:background="@drawable/brokoli" />
                 <LinearLayout
                     android:gravity="center_vertical"
                     android:layout_marginStart="8dp"
@@ -55,8 +55,8 @@
                         android:layout_height="wrap_content"/>
                 </LinearLayout>
                 </LinearLayout>
-
             </androidx.cardview.widget.CardView>
+
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -71,7 +71,7 @@
                         android:scaleType="centerCrop"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/ic_makan" />
+                        android:background="@drawable/bayam" />
                     <LinearLayout
                         android:gravity="center_vertical"
                         android:layout_marginStart="8dp"
@@ -93,42 +93,7 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_marginTop="10dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@drawable/btn_daftar"
-                    android:orientation="horizontal"
-                    android:padding="16dp">
-                    <ImageView
-                        android:scaleType="centerCrop"
-                        android:layout_width="48dp"
-                        android:layout_height="48dp"
-                        android:background="@drawable/ic_makan" />
-                    <LinearLayout
-                        android:gravity="center_vertical"
-                        android:layout_marginStart="8dp"
-                        android:orientation="vertical"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content">
-                        <TextView
-                            android:textStyle="bold"
-                            android:textColor="@color/putih"
-                            android:textSize="18sp"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Pisang"/>
-                        <TextView
-                            android:text="Baca Selengkapnya"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"/>
-                    </LinearLayout>
-                </LinearLayout>
 
-            </androidx.cardview.widget.CardView>
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -143,7 +108,7 @@
                         android:scaleType="centerCrop"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/ic_makan" />
+                        android:background="@drawable/alpukat" />
                     <LinearLayout
                         android:gravity="center_vertical"
                         android:layout_marginStart="8dp"
@@ -179,7 +144,7 @@
                         android:scaleType="centerCrop"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/ic_makan" />
+                        android:background="@drawable/jeruk" />
                     <LinearLayout
                         android:gravity="center_vertical"
                         android:layout_marginStart="8dp"
@@ -215,7 +180,7 @@
                         android:scaleType="centerCrop"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/ic_makan" />
+                        android:background="@drawable/ikan_salmon" />
                     <LinearLayout
                         android:gravity="center_vertical"
                         android:layout_marginStart="8dp"
@@ -251,7 +216,7 @@
                         android:scaleType="centerCrop"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/ic_makan" />
+                        android:background="@drawable/ubi" />
                     <LinearLayout
                         android:gravity="center_vertical"
                         android:layout_marginStart="8dp"
@@ -287,7 +252,7 @@
                         android:scaleType="centerCrop"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/ic_makan" />
+                        android:background="@drawable/kacang_kacangan" />
                     <LinearLayout
                         android:gravity="center_vertical"
                         android:layout_marginStart="8dp"
@@ -323,7 +288,7 @@
                         android:scaleType="centerCrop"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/ic_makan" />
+                        android:background="@drawable/daging" />
                     <LinearLayout
                         android:gravity="center_vertical"
                         android:layout_marginStart="8dp"

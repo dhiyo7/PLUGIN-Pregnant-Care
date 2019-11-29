@@ -21,6 +21,8 @@ import com.plugin.pregnantcarekuwuk.Activity.MinumActivity;
 import com.plugin.pregnantcarekuwuk.Activity.OlahragaActivity;
 import com.plugin.pregnantcarekuwuk.MainActivity;
 import com.plugin.pregnantcarekuwuk.MenuMakanActivity;
+import com.plugin.pregnantcarekuwuk.MenuMinumActivity;
+import com.plugin.pregnantcarekuwuk.MenuOlahragaActivity;
 import com.plugin.pregnantcarekuwuk.R;
 import com.skyfishjy.library.RippleBackground;
 
@@ -62,7 +64,7 @@ public class BerandaFragment extends Fragment {
         mnMinum.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent mnm = new Intent(getActivity(), MinumActivity.class);
+                Intent mnm = new Intent(getActivity(), MenuMinumActivity.class);
                 startActivity(mnm);
             }
         });
@@ -71,7 +73,7 @@ public class BerandaFragment extends Fragment {
         mnOlahraga.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent or = new Intent(getActivity(), OlahragaActivity.class);
+                Intent or = new Intent(getActivity(), MenuOlahragaActivity.class);
                 startActivity(or);
             }
         });

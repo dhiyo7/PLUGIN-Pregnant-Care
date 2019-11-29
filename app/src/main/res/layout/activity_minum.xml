@@ -40,7 +40,7 @@
                         android:scaleType="centerCrop"
                         android:layout_width="48dp"
                         android:layout_height="48dp"
-                        android:background="@drawable/ic_minum" />
+                        android:background="@drawable/kelapa" />
 
                     <LinearLayout
                         android:gravity="center_vertical"
@@ -82,7 +82,7 @@
                             android:scaleType="centerCrop"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:background="@drawable/ic_minum" />
+                            android:background="@drawable/jus_buah" />
 
                         <LinearLayout
                             android:gravity="center_vertical"
@@ -124,7 +124,7 @@
                             android:scaleType="centerCrop"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:background="@drawable/ic_minum" />
+                            android:background="@drawable/air_mineral" />
 
                         <LinearLayout
                             android:gravity="center_vertical"
@@ -166,7 +166,7 @@
                             android:scaleType="centerCrop"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:background="@drawable/ic_minum" />
+                            android:background="@drawable/lemonade"/>
 
                         <LinearLayout
                             android:gravity="center_vertical"
@@ -208,7 +208,7 @@
                             android:scaleType="centerCrop"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:background="@drawable/ic_minum" />
+                            android:background="@drawable/teh" />
 
                         <LinearLayout
                             android:gravity="center_vertical"
@@ -250,7 +250,7 @@
                             android:scaleType="centerCrop"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:background="@drawable/ic_minum" />
+                            android:background="@drawable/smoothie" />
 
                         <LinearLayout
                             android:gravity="center_vertical"
@@ -292,7 +292,7 @@
                             android:scaleType="centerCrop"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:background="@drawable/ic_minum" />
+                            android:background="@drawable/susu" />
 
                         <LinearLayout
                             android:gravity="center_vertical"
@@ -334,7 +334,7 @@
                             android:scaleType="centerCrop"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:background="@drawable/ic_minum" />
+                            android:background="@drawable/buttermilk" />
 
                         <LinearLayout
                             android:gravity="center_vertical"
@@ -376,7 +376,7 @@
                             android:scaleType="centerCrop"
                             android:layout_width="48dp"
                             android:layout_height="48dp"
-                            android:background="@drawable/ic_minum" />
+                            android:background="@drawable/jus_sayur" />
 
                         <LinearLayout
                             android:gravity="center_vertical"

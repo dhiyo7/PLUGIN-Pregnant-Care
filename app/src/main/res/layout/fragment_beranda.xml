@@ -165,6 +165,14 @@
 <!--                app:civ_border_color="@color/blue"/>-->
 <!--        </com.skyfishjy.library.RippleBackground>-->
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lihat Semua"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:layout_gravity="right"
+            android:paddingRight="10dp"/>
         <RelativeLayout
             android:layout_marginTop="20dp"
             android:layout_gravity="bottom"
@@ -172,221 +180,66 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <HorizontalScrollView
-                android:scrollbars="none"
+            <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp">
+                android:elevation="4dp"
+                app:cardCornerRadius="16dp"
+                style="@style/Tombol_Sub"
+                android:layout_margin="5dp">
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:orientation="horizontal"
-                    android:gravity="center_horizontal">
-
-                    <androidx.cardview.widget.CardView
+                    android:orientation="vertical">
+                    <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:elevation="4dp"
-                        app:cardCornerRadius="16dp"
-                        style="@style/Tombol_Sub"
-                        android:layout_margin="5dp">
+                        android:weightSum="3"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
 
                         <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-                            <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/gradient_1"
+                            android:layout_weight="1"/>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@drawable/gradient_2"
+                            android:layout_weight="1">
+
+                            <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:weightSum="3"
+                                android:text="Bulan ke 4"
+                                android:textColor="@color/blue"
                                 android:gravity="center"
-                                android:layout_margin="10dp">
-
-                                <LinearLayout
-                                    android:layout_width="100dp"
-                                    android:layout_height="30dp"
-                                    android:background="@drawable/gradient_1"
-                                    android:layout_weight="1"/>
-
-                                <LinearLayout
-                                    android:layout_width="100dp"
-                                    android:layout_height="30dp"
-                                    android:background="@drawable/gradient_2"
-                                    android:layout_weight="1">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Bulan ke 9"
-                                        android:textColor="@color/blue"
-                                        android:gravity="center"
-                                        android:layout_gravity="center"
-                                        android:textStyle="bold"
-                                        android:textSize="16sp"/>
-                                </LinearLayout>
-                                <LinearLayout
-                                    android:layout_width="100dp"
-                                    android:layout_height="30dp"
-                                    android:background="@drawable/gradient_3"
-                                    android:layout_weight="1"/>
-
-                            </LinearLayout>
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="\u2022 Perhatikan Kondisi tubuh anda, karena sudah \n  memasuki kandungan ke 9"
-                                android:textColor="@color/blue"
-                                android:layout_marginLeft="10dp"/>
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="\u2022 Hindari aktivitas yang berlebihan"
-                                android:textColor="@color/blue"
-                                android:layout_marginLeft="10dp"/>
-
+                                android:layout_gravity="center"
+                                android:textStyle="bold"
+                                android:textSize="16sp"/>
                         </LinearLayout>
+                    </LinearLayout>
 
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:elevation="4dp"
-                        app:cardCornerRadius="16dp"
-                        style="@style/Tombol_Sub"
-                        android:layout_margin="5dp">
+                        android:layout_height="match_parent"
+                        android:text="\u2022 Perhatikan Kondisi tubuh anda, karena sudah \n  memasuki kandungan ke 9"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"/>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:weightSum="3"
-                                android:gravity="center"
-                                android:layout_margin="10dp">
-
-                                <LinearLayout
-                                    android:layout_width="100dp"
-                                    android:layout_height="30dp"
-                                    android:background="@drawable/gradient_1"
-                                    android:layout_weight="1"/>
-
-                                <LinearLayout
-                                    android:layout_width="100dp"
-                                    android:layout_height="30dp"
-                                    android:background="@drawable/gradient_2"
-                                    android:layout_weight="1">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Bulan ke 9"
-                                        android:textColor="@color/blue"
-                                        android:gravity="center"
-                                        android:layout_gravity="center"
-                                        android:textStyle="bold"
-                                        android:textSize="16sp"/>
-                                </LinearLayout>
-                                <LinearLayout
-                                    android:layout_width="100dp"
-                                    android:layout_height="30dp"
-                                    android:background="@drawable/gradient_3"
-                                    android:layout_weight="1"/>
-
-                            </LinearLayout>
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="\u2022 Perhatikan Kondisi tubuh anda, karena sudah \n  memasuki kandungan ke 9"
-                                android:textColor="@color/blue"
-                                android:layout_marginLeft="10dp"/>
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="\u2022 Hindari aktivitas yang berlebihan"
-                                android:textColor="@color/blue"
-                                android:layout_marginLeft="10dp"/>
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
-
-                    <androidx.cardview.widget.CardView
+                    <TextView
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:elevation="4dp"
-                        app:cardCornerRadius="16dp"
-                        style="@style/Tombol_Sub"
-                        android:layout_margin="5dp">
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:weightSum="3"
-                                android:gravity="center"
-                                android:layout_margin="10dp">
-
-                                <LinearLayout
-                                    android:layout_width="100dp"
-                                    android:layout_height="30dp"
-                                    android:background="@drawable/gradient_1"
-                                    android:layout_weight="1"/>
-
-                                <LinearLayout
-                                    android:layout_width="100dp"
-                                    android:layout_height="30dp"
-                                    android:background="@drawable/gradient_2"
-                                    android:layout_weight="1">
-
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Bulan ke 9"
-                                        android:textColor="@color/blue"
-                                        android:gravity="center"
-                                        android:layout_gravity="center"
-                                        android:textStyle="bold"
-                                        android:textSize="16sp"/>
-                                </LinearLayout>
-                                <LinearLayout
-                                    android:layout_width="100dp"
-                                    android:layout_height="30dp"
-                                    android:background="@drawable/gradient_3"
-                                    android:layout_weight="1"/>
-
-                            </LinearLayout>
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="\u2022 Perhatikan Kondisi tubuh anda, karena sudah \n  memasuki kandungan ke 9"
-                                android:textColor="@color/blue"
-                                android:layout_marginLeft="10dp"/>
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="\u2022 Hindari aktivitas yang berlebihan"
-                                android:textColor="@color/blue"
-                                android:layout_marginLeft="10dp"/>
-
-                        </LinearLayout>
-
-                    </androidx.cardview.widget.CardView>
+                        android:layout_height="match_parent"
+                        android:text="\u2022 Hindari aktivitas yang berlebihan"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"/>
 
                 </LinearLayout>
-            </HorizontalScrollView>
+
+            </androidx.cardview.widget.CardView>
 
         </RelativeLayout>
 

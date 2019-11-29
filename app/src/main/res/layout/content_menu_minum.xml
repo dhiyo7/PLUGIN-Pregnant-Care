@@ -8,10 +8,123 @@
     tools:context=".MenuMinumActivity"
     tools:showIn="@layout/activity_menu_minum">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp">
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tombol_sub"
+                android:orientation="horizontal"
+                android:padding="16dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/kelapa" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/putih"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Air Kelapa"/>
+                    <TextView
+                        android:text="Baca Selengkapnya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tombol_sub"
+                android:orientation="horizontal"
+                android:padding="16dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/susu" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/putih"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Susu"/>
+                    <TextView
+                        android:text="Baca Selengkapnya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:elevation="4dp"
+            app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/tombol_sub"
+                android:orientation="horizontal"
+                android:padding="16dp">
+                <ImageView
+                    android:scaleType="centerCrop"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:background="@drawable/air_mineral" />
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_marginStart="8dp"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:textStyle="bold"
+                        android:textColor="@color/putih"
+                        android:textSize="18sp"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Air Mineral"/>
+                    <TextView
+                        android:text="Baca Selengkapnya"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
 </androidx.core.widget.NestedScrollView>
