@@ -78,22 +78,22 @@ public class BerandaFragment extends Fragment {
             }
         });
 
-//        rippleBg = view.findViewById(R.id.ripple_bg);
-//        ivPannic = view.findViewById(R.id.ivPannic);
-//        ivPannic.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                rippleBg.startRippleAnimation();
-//                new Handler().postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        rippleBg.stopRippleAnimation();
-//                        startActivity(new Intent(getActivity(), MainActivity.class));
-//                    }
-//                }, 3000);
-//
-//            }
-//        });
+        rippleBg = view.findViewById(R.id.ripple_bg);
+        ivPannic = view.findViewById(R.id.ivPannic);
+        ivPannic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rippleBg.startRippleAnimation();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        rippleBg.stopRippleAnimation();
+                        startActivity(new Intent(getActivity(), MainActivity.class));
+                    }
+                }, 3000);
+
+            }
+        });
 
         return view;
     }
