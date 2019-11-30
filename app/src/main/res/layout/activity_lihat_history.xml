@@ -51,30 +51,289 @@
                         <LinearLayout
                             android:layout_width="100dp"
                             android:layout_height="30dp"
-                            android:background="@drawable/gradient_1"
+                            android:background="@color/bulan5"
                             android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="Bulan ke 5"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:gravity="center"
+                            android:background="@color/bulan5"/>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@color/bulan5"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\u2022 Konsumsi cukup cairan, utamakan mengonsumsi \n air mineral"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\u2022 Menerapkan pola makan sehat sebab Anda \n akan merasa lebih sering lapar "
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="13dp"
+                style="@style/Tombol_Sub"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
 
                         <LinearLayout
                             android:layout_width="100dp"
                             android:layout_height="30dp"
                             android:background="@drawable/gradient_2"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="Bulan ke 6"
+                            android:textStyle="bold"
+                            android:textColor="@color/blue"
+                            android:textSize="16sp"
+                            android:gravity="center"
+                            android:background="@color/bulan6"/>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@color/bulan6"
                             android:layout_weight="1">
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Bulan ke 9"
-                                android:textColor="@color/blue"
-                                android:gravity="center"
-                                android:layout_gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"/>
                         </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\u2022 Perhatikan Kondisi tubuh anda, karena \n  sudah memasuki kandungan ke 6"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\u2022 Hindari mengonsumsi ikan terlalu banyak"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="13dp"
+                style="@style/Tombol_Sub"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@color/bulan7"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="Bulan ke 7"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/blue"
+                            android:gravity="center"
+                            android:background="@color/bulan7"/>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@color/bulan7"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\u2022 Olahraga teratur setidaknya seminggu tiga kali"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\u2022 Konsumsi sayur dan buah yang kaya serat"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="13dp"
+                style="@style/Tombol_Sub"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@color/bulan8"
+                            android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="Bulan ke 8"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/blue"
+                            android:gravity="center"
+                            android:background="@color/bulan8"/>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@color/bulan8"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\u2022 Mulai menentukan akan bersalin dimana \n dan metode persalinannya"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="\u2022 Latihan pernapasan"
+                        android:textColor="@color/blue"
+                        android:layout_marginLeft="10dp"/>
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:elevation="4dp"
+                app:cardCornerRadius="13dp"
+                style="@style/Tombol_Sub"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="3"
+                        android:gravity="center"
+                        android:layout_margin="10dp">
+
                         <LinearLayout
                             android:layout_width="100dp"
                             android:layout_height="30dp"
                             android:background="@drawable/gradient_3"
                             android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="Bulan ke 9"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/blue"
+                            android:gravity="center"
+                            android:background="@color/bulan9"/>
+
+                        <LinearLayout
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:background="@color/bulan9"
+                            android:layout_weight="1">
+
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -122,184 +381,39 @@
                         <LinearLayout
                             android:layout_width="100dp"
                             android:layout_height="30dp"
-                            android:background="@drawable/gradient_1"
+                            android:background="@color/bulan2"
                             android:layout_weight="1"/>
+                        <TextView
+                            android:layout_width="100dp"
+                            android:layout_height="30dp"
+                            android:text="Bulan ke 3"
+                            android:textStyle="bold"
+                            android:textSize="16sp"
+                            android:textColor="@color/blue"
+                            android:gravity="center"
+                            android:background="@color/bulan3"/>
 
                         <LinearLayout
                             android:layout_width="100dp"
                             android:layout_height="30dp"
-                            android:background="@drawable/gradient_2"
+                            android:background="@color/bulan3"
                             android:layout_weight="1">
 
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Bulan ke 9"
-                                android:textColor="@color/blue"
-                                android:gravity="center"
-                                android:layout_gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"/>
                         </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/gradient_3"
-                            android:layout_weight="1"/>
 
                     </LinearLayout>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="\u2022 Perhatikan Kondisi tubuh anda, karena \n  sudah memasuki kandungan ke 9"
+                        android:text="\u2022 Periksakan gigi dan gusi Anda agar terhindar \n dari infeksi"
                         android:textColor="@color/blue"
                         android:layout_marginLeft="10dp"/>
 
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:text="\u2022 Hindari aktivitas yang berlebihan"
-                        android:textColor="@color/blue"
-                        android:layout_marginLeft="10dp"/>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="4dp"
-                app:cardCornerRadius="13dp"
-                style="@style/Tombol_Sub"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:gravity="center"
-                        android:layout_margin="10dp">
-
-                        <LinearLayout
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/gradient_1"
-                            android:layout_weight="1"/>
-
-                        <LinearLayout
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/gradient_2"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Bulan ke 9"
-                                android:textColor="@color/blue"
-                                android:gravity="center"
-                                android:layout_gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"/>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/gradient_3"
-                            android:layout_weight="1"/>
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="\u2022 Perhatikan Kondisi tubuh anda, karena \n  sudah memasuki kandungan ke 9"
-                        android:textColor="@color/blue"
-                        android:layout_marginLeft="10dp"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="\u2022 Hindari aktivitas yang berlebihan"
-                        android:textColor="@color/blue"
-                        android:layout_marginLeft="10dp"/>
-
-                </LinearLayout>
-
-            </androidx.cardview.widget.CardView>
-            <androidx.cardview.widget.CardView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:elevation="4dp"
-                app:cardCornerRadius="13dp"
-                style="@style/Tombol_Sub"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:layout_marginTop="5dp"
-                android:layout_marginBottom="5dp">
-
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    android:padding="10dp">
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:weightSum="3"
-                        android:gravity="center"
-                        android:layout_margin="10dp">
-
-                        <LinearLayout
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/gradient_1"
-                            android:layout_weight="1"/>
-
-                        <LinearLayout
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/gradient_2"
-                            android:layout_weight="1">
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:text="Bulan ke 9"
-                                android:textColor="@color/blue"
-                                android:gravity="center"
-                                android:layout_gravity="center"
-                                android:textStyle="bold"
-                                android:textSize="16sp"/>
-                        </LinearLayout>
-                        <LinearLayout
-                            android:layout_width="100dp"
-                            android:layout_height="30dp"
-                            android:background="@drawable/gradient_3"
-                            android:layout_weight="1"/>
-
-                    </LinearLayout>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="\u2022 Perhatikan Kondisi tubuh anda, karena \n  sudah memasuki kandungan ke 9"
-                        android:textColor="@color/blue"
-                        android:layout_marginLeft="10dp"/>
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="\u2022 Hindari aktivitas yang berlebihan"
+                        android:text="\u2022 Mengoleskan losion dengan kandungan Vitamin E \n untuk membantu meringankan stretchmark"
                         android:textColor="@color/blue"
                         android:layout_marginLeft="10dp"/>
 

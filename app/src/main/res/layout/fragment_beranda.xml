@@ -207,35 +207,30 @@
                                     android:layout_height="25dp"
                                     android:background="@drawable/gradient_1"
                                     android:layout_weight="1"/>
-
+                                <TextView
+                                    android:layout_width="100dp"
+                                    android:layout_height="25dp"
+                                    android:text="Bulan ke 4"
+                                    android:textColor="@color/blue"
+                                    android:textStyle="bold"
+                                    android:textSize="16sp"
+                                    android:layout_weight="1"
+                                    android:gravity="center"
+                                    android:background="@color/bulan4"/>
                                 <LinearLayout
                                     android:layout_width="100dp"
                                     android:layout_height="25dp"
-                                    android:background="@drawable/gradient_2"
+                                    android:background="@color/bulan4"
                                     android:layout_weight="1">
 
-                                    <TextView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:text="Bulan ke 9"
-                                        android:textColor="@color/blue"
-                                        android:gravity="center"
-                                        android:layout_gravity="center"
-                                        android:textStyle="bold"
-                                        android:textSize="16sp"/>
                                 </LinearLayout>
-                                <LinearLayout
-                                    android:layout_width="100dp"
-                                    android:layout_height="25dp"
-                                    android:background="@drawable/gradient_3"
-                                    android:layout_weight="1"/>
 
                             </LinearLayout>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:text="\u2022 Perhatikan Kondisi tubuh anda, karena \n  sudah memasuki kandungan ke 9"
+                                android:text="\u2022 Perbanyak konsumsi sayuran dan buah \n sehingga kebutuhan nutrisi tercukupi"
                                 android:textColor="@color/blue"
                                 android:layout_marginLeft="10dp"/>
 
