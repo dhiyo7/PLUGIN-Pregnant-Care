@@ -32,7 +32,7 @@ public class MenuOlahragaActivity extends AppCompatActivity {
 //                        .setAction("Action", null).show();
 //            }
 //        });
-        getSupportActionBar().setTitle("List Olahraga");
+        getSupportActionBar().setTitle("Daftar Olahraga");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 

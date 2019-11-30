@@ -44,9 +44,17 @@
                         android:layout_height="wrap_content"
                         android:text="Air Kelapa"/>
                     <TextView
-                        android:text="Baca Selengkapnya"
+                        android:text="Air kelapa muda adalah minuman isotonik yang kaya nutrisi."
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Baca Selengkapnya >>"
+                        android:layout_gravity="right"
+                        android:textSize="10sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="5dp"/>
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -81,9 +89,18 @@
                         android:layout_height="wrap_content"
                         android:text="Susu"/>
                     <TextView
-                        android:text="Baca Selengkapnya"
+                        android:text="Jaringan yang ada di dalam tubuh ibu hamil dan bayi yang ada di dalam kandungan sangat rentan"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Baca Selengkapnya >>"
+                        android:layout_gravity="right"
+                        android:textSize="10sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="5dp"/>
+
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -119,9 +136,17 @@
                         android:layout_height="wrap_content"
                         android:text="Air Mineral"/>
                     <TextView
-                        android:text="Baca Selengkapnya"
+                        android:text="Suhu tubuh Bunda akan meningkat. Minum air putih dapat menjaga suhu tubuh tetap stabil"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Baca Selengkapnya >>"
+                        android:layout_gravity="right"
+                        android:textSize="10sp"
+                        android:textColor="@color/colorAccent"
+                        android:layout_marginTop="5dp"/>
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

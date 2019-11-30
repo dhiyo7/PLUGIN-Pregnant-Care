@@ -30,7 +30,7 @@
                 android:scaleType="centerCrop"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
-                android:background="@drawable/ikan_salmon" />
+                android:background="@drawable/ikan_salmon"/>
             <LinearLayout
                 android:gravity="center_vertical"
                 android:layout_marginStart="8dp"
@@ -45,9 +45,17 @@
                     android:layout_height="wrap_content"
                     android:text="Ikan Salmon"/>
                 <TextView
-                    android:text="Baca Selengkapnya"
+                    android:text=" Salmon adalah salah satu makanan yang mengandung asam lemak omega-3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="3dp"
+                    android:layout_gravity="right"
+                    android:text="Baca Selengkapnya >>"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorAccent"/>
             </LinearLayout>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
@@ -82,9 +90,18 @@
                         android:layout_height="wrap_content"
                         android:text="Brokoli"/>
                     <TextView
-                        android:text="Baca Selengkapnya"
+                        android:text="Dengan daya tahan tubuh yang baik selama kehamilan, maka turut mencegah terjadinya infeksi."
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Baca Selengkapnya >>"
+                        android:textColor="@color/colorAccent"
+                        android:layout_gravity="right"
+                        android:textSize="10sp"
+                        android:layout_marginTop="5dp"/>
+
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>
@@ -120,9 +137,18 @@
                         android:layout_height="wrap_content"
                         android:text="Jeruk"/>
                     <TextView
-                        android:text="Baca Selengkapnya"
+                        android:text="Asam folat dalam jeruk dapat membantu perkembangan otak janin dan mencegah cacat."
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/colorAccent"
+                        android:text="Baca Selengkapnya >>"
+                        android:textSize="10sp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="5dp"/>
+
                 </LinearLayout>
             </LinearLayout>
         </androidx.cardview.widget.CardView>

@@ -25,7 +25,7 @@ public class MenuMakanActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
-        getSupportActionBar().setTitle("List Makanan");
+        getSupportActionBar().setTitle("Daftar Makanan");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 

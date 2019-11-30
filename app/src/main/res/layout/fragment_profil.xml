@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -7,9 +7,9 @@
     tools:context=".FragmentUser.ProfilFragment">
 
     <ImageView
-    android:layout_width="match_parent"
-    android:layout_height="250dp"
-    android:background="@drawable/profile"/>
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:background="@drawable/profile"/>
 
     <TextView
         android:layout_width="wrap_content"
@@ -46,13 +46,14 @@
                 android:orientation="vertical">
 
                 <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
+                    android:layout_width="330dp"
+                    android:layout_height="400dp"
                     android:layout_marginTop="85dp"
                     android:paddingTop="15dp"
                     android:paddingLeft="15dp"
                     android:paddingRight="15dp"
                     android:paddingBottom="15dp"
+                    android:layout_gravity="center"
                     app:cardCornerRadius="10dp">
 
                     <LinearLayout
@@ -63,260 +64,169 @@
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="Anyageraldine"
+                            android:text="Retno"
                             android:textStyle="bold"
                             android:textSize="25sp"
                             android:layout_marginTop="60dp"
                             android:layout_gravity="center_horizontal"/>
 
-                        <ScrollView
+                        <LinearLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
 
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:orientation="vertical">
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginRight="5dp"
-                                    android:orientation="horizontal">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_email"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="5dp"/>
 
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/ic_email"
-                                        android:layout_gravity="center_vertical"
-                                        android:layout_marginTop="5dp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="retno@gmail.com"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_gravity="center"/>
 
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
+                        </LinearLayout>
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Email"
-                                            android:textStyle="bold"
-                                            android:textSize="12sp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:padding="5dp">
 
-                                        <EditText
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:text="anyageral@gmail.com"
-                                            android:textSize="16sp"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_phone"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="5dp"/>
 
-                                    </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="085786456722"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_gravity="center"/>
 
-                                </LinearLayout>
+                        </LinearLayout>
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginRight="5dp"
-                                    android:orientation="horizontal">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:padding="5dp">
 
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/ic_phone"
-                                        android:layout_gravity="center_vertical"
-                                        android:layout_marginTop="5dp"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_email"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="5dp"/>
 
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text=".@retno007"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_gravity="center"/>
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="No.Handphone"
-                                            android:textStyle="bold"
-                                            android:textSize="12sp"/>
+                        </LinearLayout>
 
-                                        <EditText
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:text="085786481288"
-                                            android:textSize="16sp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:padding="5dp">
 
-                                    </LinearLayout>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_lock"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="5dp"/>
 
-                                </LinearLayout>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="********"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_gravity="center"/>
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginRight="5dp"
-                                    android:orientation="horizontal">
+                        </LinearLayout>
 
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/ic_email"
-                                        android:layout_gravity="center_vertical"
-                                        android:layout_marginTop="5dp"/>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:padding="5dp">
 
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_location"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="5dp"/>
 
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Username"
-                                            android:textStyle="bold"
-                                            android:textSize="12sp"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Jl. Karimun Jawa 1 No.22"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_gravity="center"/>
 
-                                        <EditText
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:text="anyageral007"
-                                            android:textSize="16sp"/>
+                        </LinearLayout>
 
-                                    </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="25dp"
+                            android:layout_marginRight="25dp"
+                            android:orientation="horizontal"
+                            android:layout_marginTop="5dp"
+                            android:padding="5dp">
 
-                                </LinearLayout>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_date"
+                                android:layout_gravity="center_vertical"
+                                android:layout_marginTop="5dp"/>
 
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginRight="5dp"
-                                    android:orientation="horizontal">
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tegal, 20 Juni 1999"
+                                android:textSize="16sp"
+                                android:layout_marginLeft="20dp"
+                                android:layout_gravity="center"/>
 
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/ic_lock"
-                                        android:layout_gravity="center_vertical"
-                                        android:layout_marginTop="5dp"/>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Password"
-                                            android:textStyle="bold"
-                                            android:textSize="12sp"/>
-
-                                        <EditText
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:text="***********"
-                                            android:textSize="16sp"/>
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginRight="5dp"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/ic_location"
-                                        android:layout_gravity="center_vertical"
-                                        android:layout_marginTop="5dp"/>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Alamat"
-                                            android:textStyle="bold"
-                                            android:textSize="12sp"/>
-
-                                        <EditText
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:text="Jl. Karimun Jawa 1 No.22"
-                                            android:textSize="16sp"/>
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                                <LinearLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="5dp"
-                                    android:layout_marginRight="5dp"
-                                    android:orientation="horizontal">
-
-                                    <ImageView
-                                        android:layout_width="wrap_content"
-                                        android:layout_height="wrap_content"
-                                        android:src="@drawable/ic_alamat"
-                                        android:layout_gravity="center_vertical"
-                                        android:layout_marginTop="5dp"/>
-
-                                    <LinearLayout
-                                        android:layout_width="match_parent"
-                                        android:layout_height="wrap_content"
-                                        android:orientation="vertical">
-
-                                        <TextView
-                                            android:layout_width="wrap_content"
-                                            android:layout_height="wrap_content"
-                                            android:text="Tempat dan Tanggal Lahir"
-                                            android:textStyle="bold"
-                                            android:textSize="12sp"/>
-
-                                        <EditText
-                                            android:layout_width="match_parent"
-                                            android:layout_height="wrap_content"
-                                            android:text="Tegal, 20 Juni 1989"
-                                            android:textSize="16sp"/>
-
-                                    </LinearLayout>
-
-                                </LinearLayout>
-
-                                <Button
-                                    android:layout_width="150dp"
-                                    android:layout_height="30dp"
-                                    android:text="Save"
-                                    android:background="@drawable/btn_foto"
-                                    android:layout_marginTop="10dp"
-                                    android:layout_marginLeft="80dp"
-                                    android:layout_marginBottom="5dp"
-                                    android:textColor="@color/white"/>
-
-                            </LinearLayout>
-
-                        </ScrollView>
-
+                        </LinearLayout>
                     </LinearLayout>
-
                 </androidx.cardview.widget.CardView>
-
-
             </LinearLayout>
-
-
         </RelativeLayout>
-
     </LinearLayout>
-
-</FrameLayout>
+</RelativeLayout>

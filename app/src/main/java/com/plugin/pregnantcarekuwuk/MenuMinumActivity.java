@@ -33,7 +33,7 @@ public class MenuMinumActivity extends AppCompatActivity {
 //            }
 //        });
 
-        getSupportActionBar().setTitle("List Minuman");
+        getSupportActionBar().setTitle("Daftar Minuman");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
