@@ -11,6 +11,7 @@ import android.widget.TextView;
 
 import com.plugin.pregnantcarekuwuk.MainActivity;
 import com.plugin.pregnantcarekuwuk.R;
+import com.plugin.pregnantcarekuwuk.ScanActivity;
 
 public class LoginActivity extends AppCompatActivity {
 

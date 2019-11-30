@@ -41,6 +41,8 @@ dependencies {
     implementation 'com.skyfishjy.ripplebackground:library:1.0.1'
     implementation 'de.hdodenhof:circleimageview:3.0.0'
 
+//    RadarScanning
+    implementation 'com.github.kongqw:AndroidRadarScanView:1.0.1'
 
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'androidx.test.ext:junit:1.1.0'

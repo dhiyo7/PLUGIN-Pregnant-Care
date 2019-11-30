@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScanActivity"
+    android:background="@color/blue">
+    <androidx.appcompat.widget.Toolbar
+        android:paddingTop="13dp"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:layout_collapseMode="pin"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    <com.kongqw.radarscanviewlibrary.RadarScanView
+        android:id="@+id/radarScanView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        app:radarBackgroundColor="@color/colorAccent"
+        app:radarBackgroundLinesColor="@color/colorPrimaryDark"
+        app:radarBackgroundLinesNumber="3"
+        app:radarBackgroundLinesWidth="5.5"
+        app:radarScanAlpha="0x33"
+        app:radarScanColor="#FF000000"
+        app:radarScanTime="5000" />
+
+</RelativeLayout>

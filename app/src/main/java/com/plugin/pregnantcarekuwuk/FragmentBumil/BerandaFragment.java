@@ -27,6 +27,7 @@ import com.plugin.pregnantcarekuwuk.MenuMakanActivity;
 import com.plugin.pregnantcarekuwuk.MenuMinumActivity;
 import com.plugin.pregnantcarekuwuk.MenuOlahragaActivity;
 import com.plugin.pregnantcarekuwuk.R;
+import com.plugin.pregnantcarekuwuk.ScanActivity;
 import com.skyfishjy.library.RippleBackground;
 
 import de.hdodenhof.circleimageview.CircleImageView;
@@ -100,7 +101,7 @@ public class BerandaFragment extends Fragment {
                     @Override
                     public void run() {
                         rippleBg.stopRippleAnimation();
-                        startActivity(new Intent(getActivity(), MainUserActivity.class));
+                        startActivity(new Intent(getActivity(), ScanActivity.class));
                     }
                 }, 3000);
 
