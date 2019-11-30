@@ -14,12 +14,15 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.plugin.pregnantcarekuwuk.Activity.MakanActivity;
 import com.plugin.pregnantcarekuwuk.Activity.MinumActivity;
 import com.plugin.pregnantcarekuwuk.Activity.OlahragaActivity;
+import com.plugin.pregnantcarekuwuk.LihatHistory;
 import com.plugin.pregnantcarekuwuk.MainActivity;
+import com.plugin.pregnantcarekuwuk.MainUserActivity;
 import com.plugin.pregnantcarekuwuk.MenuMakanActivity;
 import com.plugin.pregnantcarekuwuk.MenuMinumActivity;
 import com.plugin.pregnantcarekuwuk.MenuOlahragaActivity;
@@ -36,7 +39,7 @@ public class BerandaFragment extends Fragment {
     private CardView mnMakan, mnMinum, mnOlahraga;
     private CircleImageView ivPannic;
     private RippleBackground rippleBg;
-
+    private TextView LihatSemua;
 
 
 
@@ -49,6 +52,15 @@ public class BerandaFragment extends Fragment {
                              Bundle savedInstanceState) {
 
         View view = inflater.inflate(R.layout.fragment_beranda, container, false);
+
+        LihatSemua = view.findViewById(R.id.lihat_semua);
+        LihatSemua.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent lihatsemua = new Intent(getActivity(), LihatHistory.class);
+                startActivity(lihatsemua);
+            }
+        });
 
         mnMakan = view.findViewById(R.id.mnMakan);
         mnMakan.setOnClickListener(new View.OnClickListener() {
@@ -78,22 +90,22 @@ public class BerandaFragment extends Fragment {
             }
         });
 
-//        rippleBg = view.findViewById(R.id.ripple_bg);
-//        ivPannic = view.findViewById(R.id.ivPannic);
-//        ivPannic.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                rippleBg.startRippleAnimation();
-//                new Handler().postDelayed(new Runnable() {
-//                    @Override
-//                    public void run() {
-//                        rippleBg.stopRippleAnimation();
-//                        startActivity(new Intent(getActivity(), MainActivity.class));
-//                    }
-//                }, 3000);
-//
-//            }
-//        });
+        rippleBg = view.findViewById(R.id.ripple_bg);
+        ivPannic = view.findViewById(R.id.ivPannic);
+        ivPannic.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                rippleBg.startRippleAnimation();
+                new Handler().postDelayed(new Runnable() {
+                    @Override
+                    public void run() {
+                        rippleBg.stopRippleAnimation();
+                        startActivity(new Intent(getActivity(), MainUserActivity.class));
+                    }
+                }, 3000);
+
+            }
+        });
 
         return view;
     }

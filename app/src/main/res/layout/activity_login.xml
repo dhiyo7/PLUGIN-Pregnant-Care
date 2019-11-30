@@ -93,6 +93,7 @@
                 android:textSize="13dp" />
 
             <Button
+                android:id="@+id/login"
                 android:layout_width="match_parent"
                 android:layout_height="45sp"
                 android:background="@drawable/btn_foto"

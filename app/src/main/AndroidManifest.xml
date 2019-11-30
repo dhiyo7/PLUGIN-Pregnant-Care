@@ -12,10 +12,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".LihatHistory"></activity>
         <activity
             android:name=".MenuOlahragaActivity"
             android:label="@string/title_activity_menu_olahraga"
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".MenuMinumActivity"
             android:label="@string/title_activity_menu_minum"
