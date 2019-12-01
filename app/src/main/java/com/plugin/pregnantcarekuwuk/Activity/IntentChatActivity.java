@@ -1,9 +1,11 @@
-package com.plugin.pregnantcarekuwuk;
+package com.plugin.pregnantcarekuwuk.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.os.Bundle;
+
+import com.plugin.pregnantcarekuwuk.R;
 
 public class IntentChatActivity extends AppCompatActivity {
 

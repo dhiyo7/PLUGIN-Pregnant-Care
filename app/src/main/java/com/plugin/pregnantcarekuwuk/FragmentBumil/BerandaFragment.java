@@ -4,8 +4,6 @@ package com.plugin.pregnantcarekuwuk.FragmentBumil;
 import android.content.Intent;
 import android.os.Bundle;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
 import androidx.cardview.widget.CardView;
 import androidx.fragment.app.Fragment;
 
@@ -13,21 +11,14 @@ import android.os.Handler;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import com.plugin.pregnantcarekuwuk.Activity.MakanActivity;
-import com.plugin.pregnantcarekuwuk.Activity.MinumActivity;
-import com.plugin.pregnantcarekuwuk.Activity.OlahragaActivity;
 import com.plugin.pregnantcarekuwuk.LihatHistory;
-import com.plugin.pregnantcarekuwuk.MainActivity;
-import com.plugin.pregnantcarekuwuk.MainUserActivity;
-import com.plugin.pregnantcarekuwuk.MenuMakanActivity;
-import com.plugin.pregnantcarekuwuk.MenuMinumActivity;
-import com.plugin.pregnantcarekuwuk.MenuOlahragaActivity;
+import com.plugin.pregnantcarekuwuk.Activity.MenuMakanActivity;
+import com.plugin.pregnantcarekuwuk.Activity.MenuMinumActivity;
+import com.plugin.pregnantcarekuwuk.Activity.MenuOlahragaActivity;
 import com.plugin.pregnantcarekuwuk.R;
-import com.plugin.pregnantcarekuwuk.ScanActivity;
+import com.plugin.pregnantcarekuwuk.Activity.ScanActivity;
 import com.skyfishjy.library.RippleBackground;
 
 import de.hdodenhof.circleimageview.CircleImageView;

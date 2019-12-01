@@ -12,19 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".IntentChatActivity"></activity>
-        <activity android:name=".ScanActivity" />
+        <activity android:name=".Activity.IntentChatActivity"></activity>
+        <activity android:name=".Activity.ScanActivity" />
         <activity android:name=".LihatHistory" />
         <activity
-            android:name=".MenuOlahragaActivity"
+            android:name=".Activity.MenuOlahragaActivity"
             android:label="@string/title_activity_menu_olahraga"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MenuMinumActivity"
+            android:name=".Activity.MenuMinumActivity"
             android:label="@string/title_activity_menu_minum"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".MenuMakanActivity"
+            android:name=".Activity.MenuMakanActivity"
             android:label="@string/title_activity_menu_makan"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainUserActivity" />

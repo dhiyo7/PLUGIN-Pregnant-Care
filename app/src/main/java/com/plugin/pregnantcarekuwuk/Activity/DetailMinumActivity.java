@@ -23,7 +23,7 @@ public class DetailMinumActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
-        getSupportActionBar().setTitle("DetailMinumActivity");
+//        getSupportActionBar().setTitle("Air Kelapa");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     @Override

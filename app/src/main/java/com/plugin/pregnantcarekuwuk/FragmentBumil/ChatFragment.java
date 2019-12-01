@@ -11,7 +11,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.LinearLayout;
 
-import com.plugin.pregnantcarekuwuk.IntentChatActivity;
+import com.plugin.pregnantcarekuwuk.Activity.IntentChatActivity;
 import com.plugin.pregnantcarekuwuk.R;
 
 /**

@@ -1,11 +1,9 @@
-package com.plugin.pregnantcarekuwuk;
+package com.plugin.pregnantcarekuwuk.Activity;
 
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import com.plugin.pregnantcarekuwuk.Activity.DetailActivity;
+import com.plugin.pregnantcarekuwuk.R;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;

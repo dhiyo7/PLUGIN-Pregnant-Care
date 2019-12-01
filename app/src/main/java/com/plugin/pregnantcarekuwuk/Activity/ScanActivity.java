@@ -1,4 +1,4 @@
-package com.plugin.pregnantcarekuwuk;
+package com.plugin.pregnantcarekuwuk.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
@@ -10,6 +10,8 @@ import android.os.Handler;
 import android.view.WindowManager;
 
 import com.kongqw.radarscanviewlibrary.RadarScanView;
+import com.plugin.pregnantcarekuwuk.MainUserActivity;
+import com.plugin.pregnantcarekuwuk.R;
 
 public class ScanActivity extends AppCompatActivity {
     RadarScanView radarScanView;

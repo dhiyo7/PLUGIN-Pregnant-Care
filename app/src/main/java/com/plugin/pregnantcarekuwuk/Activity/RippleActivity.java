@@ -1,10 +1,11 @@
-package com.plugin.pregnantcarekuwuk;
+package com.plugin.pregnantcarekuwuk.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.LinearLayout;
 
+import com.plugin.pregnantcarekuwuk.R;
 import com.skyfishjy.library.RippleBackground;
 
 public class RippleActivity extends AppCompatActivity {

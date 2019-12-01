@@ -23,7 +23,7 @@ public class DetailOlahragaActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
-        getSupportActionBar().setTitle("DetailOlahragaActivity");
+//        getSupportActionBar().setTitle("Yoga");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
     @Override

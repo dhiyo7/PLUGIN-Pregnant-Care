@@ -13,9 +13,18 @@
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         app:layout_collapseMode="pin"
-        app:popupTheme="@style/AppTheme.PopupOverlay" />
+        app:popupTheme="@style/AppTheme.PopupOverlay">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/blue"
+            android:text="Riwayat"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+    </androidx.appcompat.widget.Toolbar>
 
     <ScrollView
+        android:layout_marginLeft="20dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="5dp">
@@ -24,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
+
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"

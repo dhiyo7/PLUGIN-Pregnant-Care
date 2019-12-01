@@ -19,7 +19,7 @@ public class LihatHistory extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
-        getSupportActionBar().setTitle("History");
+        getSupportActionBar().setTitle("Riwayat");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
     }
