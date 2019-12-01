@@ -57,7 +57,7 @@ public class MapsFragment extends Fragment implements OnMapReadyCallback {
 
     private void setMapStyle() {
 
-        boolean result = mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(getActivity(), R.raw.maps_style));
+        boolean result = mMap.setMapStyle(MapStyleOptions.loadRawResourceStyle(getActivity(), R.raw.maps_stylelight));
         if (result){
             Log.e("MAP", "error set Map Style");
         }

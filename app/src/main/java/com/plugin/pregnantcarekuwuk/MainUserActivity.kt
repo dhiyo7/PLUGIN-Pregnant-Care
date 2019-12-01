@@ -20,9 +20,9 @@ class MainUserActivity : AppCompatActivity() {
     private var contentUser: FrameLayout? = null
 
     companion object{
-        private const val ID_MAPS =1
-        private const val ID_HISTORY =2
-        private const val ID_PROFILE =3
+        private const val ID_MAPS =0
+        private const val ID_HISTORY =1
+        private const val ID_PROFILE =2
     }
 
     fun addFragment(fragment: Fragment) {
@@ -44,10 +44,10 @@ class MainUserActivity : AppCompatActivity() {
         addFragment(fragment)
 
         bottomNavigationUser.add(MeowBottomNavigation.Model(ID_MAPS, R.drawable.ic_home))
-        bottomNavigationUser.add(MeowBottomNavigation.Model(ID_HISTORY, R.drawable.ic_message))
+        bottomNavigationUser.add(MeowBottomNavigation.Model(ID_HISTORY, R.drawable.ic_history))
         bottomNavigationUser.add(MeowBottomNavigation.Model(ID_PROFILE, R.drawable.ic_account))
 
-        bottomNavigationUser.setCount(ID_HISTORY, "3")
+//        bottomNavigationUser.setCount(ID_HISTORY, "3")
 
         bottomNavigationUser.setOnShowListener {
                 item -> when (item.id){
