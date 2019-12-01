@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.DetailActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Activity.DetailMinumActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -19,7 +18,7 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ikan Salmon"
+        android:text="Air Kelapa"
         android:textStyle="bold"
         android:layout_marginRight="80sp"
         android:textSize="30sp"
@@ -29,16 +28,14 @@
         android:layout_width="240sp"
         android:layout_height="200sp"
         android:layout_marginTop="30sp"
-        android:background="@drawable/ikan_salmon"
+        android:background="@drawable/kelapa"
         android:layout_gravity="center"/>
     <TextView
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:justificationMode="inter_word"
-        android:text="Protein dan vitamin di dalam ikan salmon berperan sangat baik dalam pertumbuhan otot janin dan meningkatkan sistem imun (kekebalan tubuh). Selain itu, protein memberikan manfaat sebagai sumber energi, mengatur pertumbuhan hormon, dan mengatur sistem metabolisme tubuh. Sedangkan vitamin, khususnya vitamin A, membantu meningkatkan kesehatan mata sehingga mengoptimalkan indera penglihatan. Vitamin D mencegah osteoporosis, vitamin B6 meningkatkan kesehatan jantung, dan vitamin E baik untuk menjaga kesehatan kulit."
+        android:text="Air kelapa untuk ibu hamil juga berguna untuk mengurangi pegal dan nyeri yang diakibatkan tidak optimalnya sistem sirkulasi darah. Jika sistem sirkulasi darah tidak optimal, maka janin berisiko tidak mendapatkan suplai oksigen yang cukup. Kalium dan magnesium yang terdapat dalam air kelapa berperan penting dalam memompa darah ke seluruh tubuh dari jantung. Kalium juga membantu gerakan otot, penghantaran sinyal saraf, dan membantu kerja ginjal dalam penyaringan darah."
         android:layout_marginTop="20sp"
         android:layout_gravity="center"/>
-
-
 
 </LinearLayout>

@@ -105,6 +105,7 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_menu_minum">MenuMinumActivity</string>
     <string name="title_activity_menu_olahraga">MenuOlahragaActivity</string>
+    <string name="title_activity_detail_mnm">DetailMnm</string>
 
 
 </resources>

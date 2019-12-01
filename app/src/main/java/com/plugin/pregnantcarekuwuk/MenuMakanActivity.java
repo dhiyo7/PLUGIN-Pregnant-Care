@@ -5,14 +5,18 @@ import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.plugin.pregnantcarekuwuk.Activity.DetailActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 public class MenuMakanActivity extends AppCompatActivity {
+
+    LinearLayout ikansalmon;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +31,15 @@ public class MenuMakanActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Daftar Makanan");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        ikansalmon = findViewById(R.id.ikansalmon);
+        ikansalmon.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent is = new Intent(MenuMakanActivity.this, DetailActivity.class);
+                startActivity(is);
+            }
+        });
     }
 
     @Override

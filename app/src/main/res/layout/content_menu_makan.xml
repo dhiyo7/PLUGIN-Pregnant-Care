@@ -21,6 +21,7 @@
         android:elevation="4dp"
         app:cardCornerRadius="10dp">
         <LinearLayout
+            android:id="@+id/ikansalmon"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/tombol_sub"
@@ -45,7 +46,7 @@
                     android:layout_height="wrap_content"
                     android:text="Ikan Salmon"/>
                 <TextView
-                    android:text=" Salmon adalah salah satu makanan yang mengandung asam lemak omega-3"
+                    android:text="Protein dan vitamin di dalam ikan salmon berperan sangat baik dalam pertumbuhan otot janin dan meningkatkan sistem imun."
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <TextView

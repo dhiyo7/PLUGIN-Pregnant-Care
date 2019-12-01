@@ -1,17 +1,22 @@
 package com.plugin.pregnantcarekuwuk;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.plugin.pregnantcarekuwuk.Activity.DetailMinumActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 public class MenuMinumActivity extends AppCompatActivity {
+
+    LinearLayout AirKelapa;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +40,15 @@ public class MenuMinumActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Daftar Minuman");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        AirKelapa = findViewById(R.id.airkelapa);
+        AirKelapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent ak = new Intent(MenuMinumActivity.this, DetailMinumActivity.class);
+                startActivity(ak);
+            }
+        });
     }
 
     @Override

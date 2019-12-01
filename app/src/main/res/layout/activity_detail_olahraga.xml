@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.DetailActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    tools:context=".Activity.DetailOlahragaActivity">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
@@ -19,26 +18,24 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ikan Salmon"
+        android:text="Yoga"
         android:textStyle="bold"
+        android:layout_gravity="center"
         android:layout_marginRight="80sp"
-        android:textSize="30sp"
-        android:layout_gravity="center"/>
+        android:textSize="30sp"/>
 
     <ImageView
         android:layout_width="240sp"
         android:layout_height="200sp"
         android:layout_marginTop="30sp"
-        android:background="@drawable/ikan_salmon"
-        android:layout_gravity="center"/>
+        android:layout_gravity="center"
+        android:background="@drawable/yoga"/>
     <TextView
         android:layout_width="300sp"
         android:layout_height="wrap_content"
         android:justificationMode="inter_word"
-        android:text="Protein dan vitamin di dalam ikan salmon berperan sangat baik dalam pertumbuhan otot janin dan meningkatkan sistem imun (kekebalan tubuh). Selain itu, protein memberikan manfaat sebagai sumber energi, mengatur pertumbuhan hormon, dan mengatur sistem metabolisme tubuh. Sedangkan vitamin, khususnya vitamin A, membantu meningkatkan kesehatan mata sehingga mengoptimalkan indera penglihatan. Vitamin D mencegah osteoporosis, vitamin B6 meningkatkan kesehatan jantung, dan vitamin E baik untuk menjaga kesehatan kulit."
+        android:text="Di masa kehamilan, tubuh Anda mengalami perubahan yang cukup drastis, baik secara fisik, hormonal maupun emosional. Hormon seperti estrogen, progesteron, prolaktin, relaxin, dan oksitosin meningkat tajam dan mengubah tubuh Anda. Berlatih prenatal yoga bisa membantu Anda untuk bisa beradaptasi secara konsisten terhadap perubahan tubuh Anda."
         android:layout_marginTop="20sp"
         android:layout_gravity="center"/>
-
-
 
 </LinearLayout>

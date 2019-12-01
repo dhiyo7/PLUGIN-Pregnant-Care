@@ -20,6 +20,7 @@
             android:elevation="4dp"
             app:cardCornerRadius="10dp">
             <LinearLayout
+                android:id="@+id/airkelapa"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:background="@drawable/tombol_sub"
@@ -44,7 +45,7 @@
                         android:layout_height="wrap_content"
                         android:text="Air Kelapa"/>
                     <TextView
-                        android:text="Air kelapa muda adalah minuman isotonik yang kaya nutrisi."
+                        android:text="Air kelapa untuk ibu hamil juga berguna untuk mengurangi pegal dan nyeri yang diakibatkan tidak optimalnya sistem sirkulasi darah."
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView

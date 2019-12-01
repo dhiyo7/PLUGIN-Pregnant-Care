@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".ScanActivity"></activity>
+        <activity android:name=".Activity.DetailOlahragaActivity"></activity>
+        <activity android:name=".Activity.DetailMinumActivity" />
+        <activity android:name=".ScanActivity" />
         <activity android:name=".LihatHistory" />
         <activity
             android:name=".MenuOlahragaActivity"

@@ -6,17 +6,16 @@ import androidx.appcompat.widget.Toolbar;
 import android.os.Bundle;
 import android.view.WindowManager;
 import android.widget.TextView;
-
 import com.plugin.pregnantcarekuwuk.R;
 
-public class DetailActivity extends AppCompatActivity {
+public class DetailOlahragaActivity extends AppCompatActivity {
 
     TextView textView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_detail);
+        setContentView(R.layout.activity_detail_olahraga);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -24,11 +23,9 @@ public class DetailActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
-        getSupportActionBar().setTitle("DetailActivity");
+        getSupportActionBar().setTitle("DetailOlahragaActivity");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
     }
-
     @Override
     public boolean onSupportNavigateUp() {
         finish();

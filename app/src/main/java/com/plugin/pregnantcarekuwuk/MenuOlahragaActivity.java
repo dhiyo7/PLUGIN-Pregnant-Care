@@ -1,17 +1,21 @@
 package com.plugin.pregnantcarekuwuk;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
+import com.plugin.pregnantcarekuwuk.Activity.DetailOlahragaActivity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
 import android.view.View;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 public class MenuOlahragaActivity extends AppCompatActivity {
+    LinearLayout yoga;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,16 +28,17 @@ public class MenuOlahragaActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS,
                 WindowManager.LayoutParams.FLAG_LAYOUT_NO_LIMITS);
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
         getSupportActionBar().setTitle("Daftar Olahraga");
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+
+        yoga = findViewById(R.id.yoga);
+        yoga.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent yg = new Intent(MenuOlahragaActivity.this, DetailOlahragaActivity.class);
+                startActivity(yg);
+            }
+        });
     }
 
     @Override
