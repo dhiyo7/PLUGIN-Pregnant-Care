@@ -29,6 +29,8 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".MainUserActivity" />
         <activity android:name=".Activity.DetailActivity" />
+        <activity android:name=".Activity.DetailMinumActivity"/>
+        <activity android:name=".Activity.DetailOlahragaActivity"/>
         <activity android:name=".MainActivity" />
         <activity android:name=".Activity.OlahragaActivity" />
         <activity android:name=".Activity.MinumActivity" />
