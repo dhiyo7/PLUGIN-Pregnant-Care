@@ -31,19 +31,12 @@ public class ScanActivity extends AppCompatActivity {
         radarScanView = (RadarScanView) findViewById(R.id.radarScanView);
 
         radarScanView
-                // 设置雷达扫描一圈时间
                 .setRadarScanTime(2000)
-                // 设置雷达背景颜色
                 .setRadarBackgroundColor(Color.WHITE)
-                // 设置雷达背景圆圈数量
                 .setRadarBackgroundLinesNumber(4)
-                // 设置雷达背景圆圈宽度
                 .setRadarBackgroundLinesWidth(2)
-                // 设置雷达背景圆圈颜色
                 .setRadarBackgroundLinesColor(Color.GRAY)
-                // 设置雷达扫描颜色
                 .setRadarScanColor(0xFFAAAAAA)
-                // 设置雷达扫描透明度
                 .setRadarScanAlpha(0xAA);
 
         radarScanView.startScan();
@@ -52,6 +45,7 @@ public class ScanActivity extends AppCompatActivity {
             public void run() {
                 radarScanView.stopScan();
                 startActivity(new Intent(ScanActivity.this, MainUserActivity.class));
+                finish();
             }
         }, 2000);
 

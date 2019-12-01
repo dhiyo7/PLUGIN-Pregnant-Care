@@ -107,7 +107,8 @@
             android:layout_alignBottom="@id/booking1ImageView1"
             android:layout_alignTop="@id/booking1ImageView1"
             android:singleLine="true"
-            android:hint="Set Lokasi jemput"
+            android:hint="Lokasi Anda"
+            android:focusable="false"
             android:id="@+id/booking2_from"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
 
@@ -130,7 +131,7 @@
             android:layout_marginLeft="10dp"
             android:layout_alignBottom="@id/booking1ImageView4"
             android:singleLine="true"
-            android:hint="Set Tujuan"
+            android:hint="Jl. PLUGIN no 7"
             android:id="@+id/booking2_dest"
             android:textAppearance="?android:attr/textAppearanceMedium"/>
 
